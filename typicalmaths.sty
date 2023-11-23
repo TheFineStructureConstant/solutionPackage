@@ -1,0 +1,42 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{typicalmaths}[2023/11/23 Common Math Include Package]
+
+%initialize packages
+\RequirePackage[top=1in, bottom=1in, left=1in, right=1in, headsep=.5in]{geometry}
+\RequirePackage{helvet}
+\RequirePackage{amsmath}
+\RequirePackage{amsthm}
+\RequirePackage{mathtools}
+\RequirePackage{amsfonts}
+\RequirePackage{nccmath}
+\RequirePackage{amssymb}
+\RequirePackage{setspace}
+\RequirePackage{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage[font=footnotesize,labelfont=bf]{caption}
+\RequirePackage{subcaption}
+\RequirePackage{wrapfig}
+\RequirePackage{floatrow}
+\RequirePackage{multirow}
+\RequirePackage{titling}
+\RequirePackage{graphicx}
+\RequirePackage{adjustbox}
+\RequirePackage{enumitem}
+\RequirePackage{booktabs}
+\RequirePackage{fontspec}
+
+% \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+% \setmainfont{Raleway}
+% \setmonofont{Lucida Sans Typewriter}
+% create divides command
+
+\newcommand{\divides}{\bigm|}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+
+% create solution environment
+\newenvironment{solution}
+  {\begin{proof}[Solution]}
+  {\end{proof}
+}
